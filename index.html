@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:560px)" href="phone.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+    <title>Cafe</title>
+</head>
+
+<body>
+    <div id="banner">
+      <img src="banner.jpg">
+        <h1 id="main">
+            <a href="index.html">CafeCode</a>
+        </h1>
+        <div id="navbar">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="about.html">About</a></div>
+            <div><a href="services.html">Services</a></div>
+            <div><a href="specialities.html">Specialities</a></div>
+            <div><a href="contact.html">Contact</a></div>
+        </div>
+        <div id="sub"></div>
+    </div>
+    <div id="why">
+      
+        <h1>Why CafeCode, why not espresso?</h1>
+        <ul>
+            <li>We are available near every coorporate sector</li>
+            <li>We provide the best environment according to the season<br>In winters we have warm and cozy
+                environment<br>In summers we have air conditioned hall<br>In Rainy season you get to experience the
+                breeze of rain.</li>
+            <li>The place remains hygenic and clean.</li>
+            <li>We at CafeCode provide free sitting for any meeting.</li>
+            <li>We indirectly acts as a great network provider.</li>
+        </ul>
+    </div>
+    <h1 class="places-heading">Places</h1>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          
+          <img src="1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="2.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="3.jpg" style="width:100%">
+         
+        </div>
+
+        <div class="mySlides fade">
+          
+            <img src="4.jpg" style="width:100%">
+           
+          </div>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    <footer id="footer">
+        <h1>Contact</h1>
+        <div id="social-container">
+            <div class="social"><img src="instagram.png" alt=""><a href="#">intagramHandle</a></img></div>
+            <div class="social"><img src="facebook.png" alt=""><a href="#">facebookLink</a></img></div>
+            <div class="social"><img src="twitter.png" alt=""><a href="#">twitterHandle</a></img></div>
+            <div class="social"><img src="snapchat.png" alt=""><a href="#">snapchatLink</a></img></div>
+            <div class="social"><img src="youtube.png" alt=""><a href="#"> YTchannel</a></img></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

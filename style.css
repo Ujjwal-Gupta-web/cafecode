@@ -1,0 +1,303 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background:rgb(240, 224, 173);
+}
+/*landing div*/
+#banner{
+    
+    width:100%;
+    height:100vh;   
+    border:1px solid black;
+    border-radius:0 0 20px 20px;
+
+}
+#banner img{
+    position: absolute;
+    z-index:-1;
+    height:100vh;
+    width:100%;
+    display:block;
+    border-radius:0 0 20px 20px;
+    box-shadow:5px 5px 10px black;
+}
+    #main{
+        text-align:center;
+    margin-bottom:35px;
+    display:block;
+    height:1.4em;    
+}
+    #main a{
+    font-size:1.01em;
+    text-decoration:none;
+    color:bisque;
+    animation-name:title_exp;
+    animation-iteration-count:infinite;
+    animation-delay:0.5s;
+    animation-duration: 3s;
+}
+    @keyframes title_exp{
+0%{font-size:1.01em;}
+50%{font-size:1.3em;}
+100%{font-size:1.01em;}
+}
+
+    #navbar{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    font-size:1.6em;
+    margin-bottom:120px;
+    flex-wrap: wrap;
+    background:black;
+}
+    #navbar a{
+text-decoration:none;
+color:rgba(199, 71, 39, 0.9);
+font-weight:bold;  
+text-shadow: rgb(48, 23, 19) 1px 1px 2px;
+border-radius:6px 6px 6px 6px;
+padding:4px;
+
+}
+#navbar a:hover{
+    color:black;    
+    background:rgba(199, 71, 39, 0.9);
+    }
+
+    #sub{
+    font-size:2em;
+    font-weight:bold;
+    text-align:center;
+
+}
+    #sub:before{
+    content:'';
+    color:rgb(226, 213, 137);
+    text-shadow: -3px -1px 4px black;
+    animation-name:change;
+    animation-iteration-count: infinite;
+    animation-delay:1s;
+    animation-duration:4s;
+}
+    @keyframes change{
+    0%{
+        content: 'Tired of Work........';   
+    }
+    70%{
+        content:'Visit Us';
+    }
+    100%{
+        content: 'A 30min break will be worth.'
+    }
+}
+
+
+
+#why{
+    border:2px black solid;
+    border-radius:10px 10px 10px 10px;
+    margin:3em;
+    background:url('why.jpg') center center/cover;
+   background-repeat: no-repeat;
+   box-shadow:5px 5px 10px black;
+}
+#why h1{
+    color:whitesmoke;
+    text-align:center;
+    margin-top:1em; 
+    text-shadow:8px 8px 10px black;
+}
+#why ul{
+    padding:50px;
+    color:rgb(223, 197, 158);
+    font-size:1.4em;
+    line-height:3em;
+    text-shadow:8px 8px 10px black;
+    font-weight: bold;
+    list-style-image:url('cfelist.png') ;
+}
+
+
+
+.places-heading{
+    font-size:2.5em;
+    text-align:center;
+    color:rgba(199, 71, 39, 0.9);
+    text-shadow:1px 1.2px grey;
+    font-weight:bold;
+    margin-bottom:1.2em;
+}
+#footer{
+    padding:10px;
+    background:url('contact.jpg') center center/cover;
+    height:300px;
+    background-repeat: no-repeat;
+}
+#footer h1{
+    color:whitesmoke;
+    text-shadow:2px 2px black;
+    margin-bottom:15px;
+}   
+#footer #social-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+#footer #social-container img{
+    height:3em;
+    width:3em;
+}
+#footer #social-container .social{
+    display:flex;
+    align-items:center;
+    width:auto;
+}
+#footer #social-container .social a{
+    text-decoration:none;
+    color:white;
+    visibility: hidden;
+    width:0;
+}
+#footer #social-container .social:hover a{
+        visibility: visible;
+        transition-delay: 0.3s;
+        
+}
+
+
+/* Slideshow */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:1.2em;
+  }
+    
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*Utility*/
+.new-tab-heading{
+    text-shadow: 2px 2px 5px black;
+    color:rgb(226, 213, 137);
+    text-align:center;
+    font-size:2em;
+    font-weight:bold;
+    text-align:center;
+}
+
+
+/*About.html*/
+#founder{
+    margin:3em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#founder #img-name-container img{
+    height:18em;
+    width:10em;
+    margin:0 1em 1em 0;
+}
+#leadership{
+margin:4em;
+display:flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+}
+.card{
+    box-shadow: 2px 2px rgba(88, 92, 56, 0.247);
+    BACKGROUND:rgba(235, 229, 229, 0.247);
+    display:block;
+    border-radius:10px 10px 10px 10px;
+    padding:1.5em;
+}
+.card .img{
+    height:10em;
+    width:7em;
+    margin-bottom:1em;
+    
+}
+.card img{
+    display:block;
+    border-radius:10px 10px 0 0;
+    height:10em;
+    width:7em;
+}
+.card .des
+{
+    padding:2px;
+    text-align:center;
+    font-weight:bold;
+}
+
+
+/*Services.html*/
+#types{
+    margin:1em;
+}
+.type{
+    border-radius: 10px 10px 10px 10px;
+    padding:2em;
+    margin-top:1em;
+    margin-bottom:1em;
+    BACKGROUND:rgba(235, 229, 229, 0.247);
+    box-shadow:2px 2px rgba(0, 0, 0, 0.267); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.type .img img{
+    height:10em;
+    width:7em;
+    margin:1em;
+}
+.type .type-desc{
+    font-weight:bold;
+    font-size:1.4em;
+    font-variant: small-caps;
+    text-shadow:2px 2px 5px rgb(197, 159, 101);
+}
+
+
+
+/*specialities.html*/
+
+
+
+
+/*Contact.html*/
+#contact-container{
+    margin:3em;
+    BACKGROUND:rgba(148, 245, 185, 0.267);
+    padding:2em;
+    line-height:1.5em;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow:2px 2px rgba(0, 0, 0, 0.267); 
+       line-height:1.5em;
+}
